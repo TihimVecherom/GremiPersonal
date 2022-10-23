@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221022005102">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221023231145">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,10 +25,10 @@
 
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">Для кого вебінар?</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Програма курсу</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Чому ми?</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Cпікер</a></li>
+								<li class="menu__item"><a href="#one" class="menu__link close">Для кого вебінар?</a></li>
+								<li class="menu__item"><a href="#two" class="menu__link close">Програма курсу</a></li>
+								<li class="menu__item"><a href="#three" class="menu__link close">Чому ми?</a></li>
+								<li class="menu__item"><a href="#for" class="menu__link close">Cпікер</a></li>
 							</ul>
 						</nav>
 						<div data-da=".menu__list, 1023.98" class="header__buttons">
@@ -40,7 +40,7 @@
 				</div>
 
 			</div>
-
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?_v=20221023231145"></script>
 		</header>
 		<main class="page">
 
@@ -60,10 +60,10 @@
 						<div class="first__block-picture">
 							<img src="img/main/first/1.png" alt="Photo">
 							<div class="first__picture-text">
-								<div data-prlx-mouse data-prlx-dxr class="first__text-up">10.11.2022</div>
+								<div class="first__text-up">10.11.2022</div>
 								<div class="first__block-text-down">
-									<div data-prlx-mouse class="first__text-down">18:00 - Варшава</div>
-									<div data-prlx-mouse data-prlx-dxr class="first__text-down"> 19:00 - Київ</div>
+									<div class="first__text-down">18:00 - Варшава</div>
+									<div class="first__text-down"> 19:00 - Київ</div>
 								</div>
 							</div>
 						</div>
@@ -116,14 +116,404 @@
 				</div>
 			</div>
 
+			<div class="registration">
+				<div class="registration__container">
+					<div class="registration__section">
+						<div class="registration__picture">
+							<img src="img/main/form/1.jpg" alt="icon">
+							<img src="img/main/form/icon-logo.svg" alt="icon">
+						</div>
+						<div class="registration__form form form-padding-r">
+							<div class="form__block-title">
+								<div class="form__icon">
+									<img src="img/main/form/icon.svg" alt="icon">
+								</div>
+								<div class="form__title">Ставай професіоналом в рекрутації,
+									реєструйся на вебінар</div>
+							</div>
+							<div class="form__block-input ">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше ім’я*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+38 (___) ___ __ __*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Назва компанії" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Країна" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Місто" class="input">
+								<button class="button-form">Надіслати</button>
+								<div class="text-form">Натискаючи на кнопку, я погоджуюся <br>
+									<a href="#">
+										на обробку персональних даних <br>
+										та правилами користування Платформою
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="one" class="for-whom">
+				<div class="for-whom__container">
+					<div class="for-whom__section">
+						<div class="for-whom__title">Для кого вебінар? </div>
+						<div class="for-whom__items">
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/1.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text">Для українців, які живуть в Україні
+									та поза її межами, і шукають нові можливості професійної самореалізації та заробітку</div>
+							</div>
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/2.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text aling-centr">Для людей БЕЗ ДОСВІДУ</div>
+							</div>
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/3.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text">Для тих, хто має досвід у рекрутації (робота в
+									HR-департаментах,
+									відділах кадрів) </div>
+							</div>
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/4.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text">Для комунікабельних, відкритих, гнучких
+									і цілеспрямованих людей, які прагнуть побудувати незалежну від обставин кар’єру</div>
+							</div>
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/5.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text">Для людей будь-яких віку, статі та рівня освіти. Успішність у
+									професії залежить тільки від ваших зусиль</div>
+							</div>
+							<div class="for-whom__item">
+								<div class="for-whom__item-picture">
+									<img src="img/main/for-whom/6.jpg" alt="picture">
+								</div>
+								<div class="for-whom__item-text">Для тих, хто хоче заробляти 2000 доларів за 5 тижнів, або від
+									100
+									доларів за кожного рекрутованого кандидата</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="two" class="course-program">
+				<div class="course-program__container">
+					<div class="course-program__section">
+						<div class="course-program__block-pictures">
+							<div class="course-program__pictures-title">Програма курсу</div>
+							<div class="course-program__pictures">
+								<div class="course-program__picture">
+									<img src="img/main/course-program/1.jpg" alt="picture">
+								</div>
+								<div class="course-program__picture">
+									<img src="img/main/course-program/2.jpg" alt="picture">
+								</div>
+								<div class="course-program__picture">
+									<img src="img/main/course-program/3.jpg" alt="picture">
+								</div>
+							</div>
+						</div>
+						<div class="course-program__items">
+							<div class="course-program__item">
+								<div class="course-program__num-item">1</div>
+								<div class="course-program__item-content">
+									<div class="course-program__item-title">Перша зустріч</div>
+									<div class="course-program__item-text">Знайомство з компанією і ринком. <br>
+										Загальна інформація про роботу рекрутера, перспективи розвитку в професії.</div>
+								</div>
+							</div>
+							<div class="course-program__item">
+								<div class="course-program__num-item">2</div>
+								<div class="course-program__item-content">
+									<div class="course-program__item-title">Друга зустріч</div>
+									<div class="course-program__item-text">Як виглядає співпраця з Gremi Personal: поетапний
+										алгоритм. Легалізація працевлаштування та перебування. </div>
+								</div>
+							</div>
+							<div class="course-program__item">
+								<div class="course-program__num-item">3</div>
+								<div class="course-program__item-content">
+									<div class="course-program__item-title">Третя зустріч</div>
+									<div class="course-program__item-text">Ефективні продажі. <br>
+										Робота в CRM для рекрутера.
+										Кейси.</div>
+								</div>
+							</div>
+							<div class="course-program__item">
+								<div class="course-program__num-item">4</div>
+								<div class="course-program__item-content">
+									<div class="course-program__item-title">І це ще не все!</div>
+									<div class="course-program__item-text">По завершенню курсу кожен слухач, який вирішить
+										працювати
+										рекрутером, отримає персонального куратора. Наставник допомагатиме робити перші кроки у
+										професії та консультуватиме з усіх питань. </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="three" class="why-we">
+				<div class="why-we__container">
+					<div class="why-we__section">
+						<div class="why-we__block-picture">
+							<div class="why-we__picture-title">Чому ми?</div>
+							<div class="why-we__picture">
+								<img src="img/main/why-we/1.png" alt="picture">
+							</div>
+						</div>
+						<div class="why-we__items">
+							<div class="why-we__item">
+								<div class="why-we__item-num">120 000</div>
+								<div class="why-we__item-text">кандидатів у базі</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">9 547</div>
+								<div class="why-we__item-text">робітників працевлаштовано у 2021 році</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">310</div>
+								<div class="why-we__item-text">клієнтів довіряють нам підбір персоналу</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">600</div>
+								<div class="why-we__item-text">агентств-партнерів в Україні</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">13</div>
+								<div class="why-we__item-text">філіалів у ключових містах Польщі</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">14</div>
+								<div class="why-we__item-text">років досвіду на ринку</div>
+							</div>
+							<div class="why-we__item">
+								<div class="why-we__item-num">205</div>
+								<div class="why-we__item-text">міст в Польщі, де працюють наші робітники</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="for" class="speaker">
+				<div class="speaker__container">
+					<div class="speaker__section">
+						<div class="speaker__content">
+							<div class="speaker__block-title">
+								<div class="speaker__title">Анна Джоболда</div>
+								<div class="speaker__title-text">Директор Департаменту Рекрутації</div>
+							</div>
+							<div class="speaker__block-text">
+								<div class="speaker__text">Пройшла шлях від співробітник робітника до директора департаменту
+								</div>
+								<div class="speaker__text">Керує департаментом рекрутації, який працевлаштовує
+									понад 9500 працівників щорічно, у 205 містах Польщі,
+									на 310 підприємствах-партнерах.
+								</div>
+								<div class="speaker__text">Анна виступає запрошеним спікером на телебаченні, радіо, дає
+									коментарі для провідних медіа Польщі, України
+									та інших країн.
+								</div>
+							</div>
+							<div class="speaker__block-partners">
+								<div class="speaker__partners">
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/1.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/2.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/3.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/4.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/5.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/6.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/7.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/8.png" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/9.svg" alt="logo">
+									</div>
+									<div class="speaker__partner">
+										<img src="img/main/speaker/groupe/10.png" alt="logo">
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+						<div class="speaker__picture">
+							<div class="speaker__picture-text">Cпікер</div>
+							<img src="img/main/speaker/1.jpg" alt="photo">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="info-work">
+				<div class="info-work__container">
+					<div class="info-work__section">
+						<div class="info-work__items items-one">
+							<div class="info-work__item-title"><span>З чого складається робота
+									рекрутера-фрілансера?</span></div>
+							<div class="info-work__item"><span> Пошук клієнтів, які хочуть
+									працювати у Польщі</span></div>
+							<div class="info-work__item"><span>Детальне інформування клієнта про обрану вакансію, умови роботи
+									та
+									проживання</span></div>
+							<div class="info-work__item"><span>Підбір для них найкращої пропозиції роботи з нашої різноманітної
+									бази
+									вакансій </span></div>
+							<div class="info-work__item"><span>Передача даних клієнта відповідальному менеджеру Gremi Personal
+									для
+									подальшої підготовки документів</span></div>
+						</div>
+						<div class="info-work__items items-two">
+							<div class="info-work__item-title"><span>Що потрібно для успішної
+									роботи та більших заробітків?</span></div>
+							<div class="info-work__item"><span>Добре знати базу вакансій, щоб запропонувати
+									кожному клієнту найкращий варіант </span></div>
+							<div class="info-work__item"><span>Бути проактивним і відкритим, знаходити нові можливості для
+									рекрутації
+								</span></div>
+							<div class="info-work__item"><span>Взаємодіяти з менеджерами, відповідально ставитися до своєї
+									частини
+									роботи у процесі працевлаштування</span></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner">
+				<div class="banner__container">
+					<div class="banner__section">
+						<div class="banner__block">
+							<div class="banner__content">
+								<div class="banner__title">Реєструйся і отримай план
+									розмови рекрутера з кандидатом</div>
+								<div class="bunner__buttons"><a class="bunner-button" href="#">Залишити заявку</a></div>
+							</div>
+							<div data-da=".banner__content, 767.98" class="banner__picture">
+								<img src="img/main/banner/1.png" alt="picture">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="banner-info">
+				<div class="banner-info__container">
+					<div class="banner-info__content">
+						<div class="banner-info__text">Ставай професіоналом у рекрутації та приєднуйся до команди <br>
+							партнерів-фрілансерів. Ми надамо всі можливості для роботи,близько <br>
+							3000 вакансій, супровід, власну CRM, допомогу із залученням кандидатів.</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="registration registration-down">
+				<div class="registration__container">
+					<div class="registration__section">
+
+						<div class="registration__form form form-padding-l">
+							<div class="form__block-title">
+								<div class="form__icon">
+									<img src="img/main/form/icon.svg" alt="icon">
+								</div>
+								<div class="form__title">Ставай професіоналом в рекрутації,
+									реєструйся на вебінар</div>
+							</div>
+							<div class="form__block-input ">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ваше ім’я*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Email*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+38 (___) ___ __ __*" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Назва компанії" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Країна" class="input">
+								<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Місто" class="input">
+								<button class="button-form">Надіслати</button>
+								<div class="text-form">Натискаючи на кнопку, я погоджуюся <br>
+									<a href="#">
+										на обробку персональних даних <br>
+										та правилами користування Платформою
+									</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="registration__picture form-picture">
+							<img src="img/main/form/1.jpg" alt="icon">
+							<img src="img/main/form/icon-logo-2.svg" alt="icon">
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__section">
+					<div class="footer__block-logo">
+						<div class="footer__title"><span>Waly Piastowskie 1/1415 80-855</span> <span>Gdansk, Poland</span></div>
+						<div class="footer__email">
+							<a class="footer-link-email" href="#">business-gp.com</a>
+						</div>
+						<div class="footer__logo">
+							<a href="#"></a>
+							<img src="img/footer/logo.svg" alt="logo">
+						</div>
+					</div>
+					<div class="footer__content">
+						<div data-da=".footer__block-logo, 850" class="footer__social">
+							<a class="social-link" href="#"><img src="img/footer/social/1.svg" alt="icon"></a>
+							<a class="social-link" href="#"><img src="img/footer/social/2.svg" alt="icon"></a>
+							<a class="social-link" href="#"><img src="img/footer/social/3.svg" alt="icon"></a>
+							<a class="social-link" href="#"><img src="img/footer/social/4.svg" alt="icon"></a>
+							<a class="social-link" href="#"><img src="img/footer/social/5.svg" alt="icon"></a>
+							<a class="social-link" href="#"><img src="img/footer/social/6.svg" alt="icon"></a>
+						</div>
+						<div class="footer__number">
+							<a class="link-tel" href="tel:+48 248-123-595">+48 248-123-595</a>
+							<a class="link-tel" href="tel:+48 253-543-234">+48 253-543-234</a>
+							<a class="link-tel" href="tel:+48 543-765-456">+48 543-765-456</a>
+						</div>
+						<div class="footer__info">
+							<span>© 2022 Gremi personal. All Rights Reserved ·</span> <a href="#">partners@gremi-personal.com.ua</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20221022005102"></script>
+	<script src="js/app.min.js?_v=20221023231145"></script>
 </body>
 
 </html>
