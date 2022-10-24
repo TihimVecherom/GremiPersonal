@@ -168,6 +168,15 @@
             }
         }));
     }));
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".button-scroll");
+    const scrollChange = 1e3;
+    const add_class_on_scroll = () => header.classList.add("button-scroll-active");
+    const remove_class_on_scroll = () => header.classList.remove("button-scroll-active");
+    window.addEventListener("scroll", (function() {
+        scrollpos = window.scrollY;
+        if (scrollpos >= scrollChange) add_class_on_scroll(); else remove_class_on_scroll();
+    }));
     window["FLS"] = true;
     isWebp();
     headerScroll();
